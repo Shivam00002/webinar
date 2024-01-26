@@ -66,7 +66,7 @@ export const HeroComponent = () => {
             </div>
           </div>
 
-          <div className="w-[300px]   absolute md:-bottom-4  -bottom-[370px] md:right-[40px] z-50 ">
+          <div className="w-[300px]   absolute md:-bottom-4  -bottom-[340px] md:right-[40px] z-50 ">
             <div className=" w-fit h-fit">
               <p className="text-white md:text-[15px] text-[12px] leading-1 ">
                 I will be the coach for 4 Hours (3.5 Hrs+ 30 mins Bonus Content)

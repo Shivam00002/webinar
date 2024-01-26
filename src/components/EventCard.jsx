@@ -72,7 +72,7 @@ export const EventCard = () => {
           {" "}
           &#x1F525; 235 Peoples Have Registered
         </p>
-        <button className=" mt-3 w-[90%] mx-auto  grid place-content-center h-fit md:text-[20px]  py-2 bg-[#FF68A0] text-white font-semibold rounded-lg">
+        <button className=" mt-3 w-[90%] mx-auto  grid place-content-center h-fit md:text-[15px] text-sm  py-2 bg-[#FF68A0] text-white font-semibold rounded-lg">
           BOOK A SEAT
         </button>
       </div>
