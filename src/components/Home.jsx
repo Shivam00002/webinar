@@ -11,7 +11,7 @@ import Footer from "./Footer";
 
 export const Home = () => {
   return (
-    <div className="md:max-w-[1440px] w-full mx-auto">
+    <div className="md:max-w-[1040px] w-full mx-auto">
       <HeroComponent />
       <Featured />
       <VideoPlayer />
