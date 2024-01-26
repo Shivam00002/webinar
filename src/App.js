@@ -1,10 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import { Home } from './components/Home';
 
 function App() {
   return (
 <div className=''>
-<h1 className='text-[50px] text-blue-800'>Hello</h1>
+<Home/>
 </div>
   );
 }
