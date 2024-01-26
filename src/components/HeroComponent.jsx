@@ -28,7 +28,7 @@ export const HeroComponent = () => {
           </p>
         </div>
 
-        <div className="md:flex  items-center w-full gap-5  mt-4">
+        <div className="md:flex relative  items-center w-full gap-5  mt-4">
           <div className="md:w-[50%] w-full h-fit md:h-[150px] py-2 md:rounded-tr-full rounded-lg bg-[#FFF5F9]">
             <div className="flex items-center justify-around mr-7">
               <div>
@@ -66,7 +66,7 @@ export const HeroComponent = () => {
             </div>
           </div>
 
-          <div className="w-[300px]   absolute md:bottom-auto  bottom-14 md:right-[440px] z-50 ">
+          <div className="w-[300px]   absolute md:-bottom-4  -bottom-[370px] md:right-[40px] z-50 ">
             <div className=" w-fit h-fit">
               <p className="text-white md:text-[15px] text-[12px] leading-1 ">
                 I will be the coach for 4 Hours (3.5 Hrs+ 30 mins Bonus Content)
@@ -90,7 +90,7 @@ export const HeroComponent = () => {
             </div>
           </div>
 
-          <div className="md:h-[650px]  w-[300px] md:w-[350px]  md:right-80  right-0 top-[220px] md:-top-[75px] z-0 absolute">
+          <div className="md:h-[500px]  w-[300px] md:w-[300px]  md:right-0  right-0 top-[-10px] md:top-[-300px] z-0 absolute">
             <img
               alt="priyanka-img"
               src="https://blogger.googleusercontent.com/img/a/AVvXsEi4nXAL_9LoN7F99dGyVHayOhLgHeqIOSAciSTDVwLkR5j-ajBhY9F3NkUf5qWd_PSwqsgFdbzM5IZn0wDZAFRJ0IfAB2oVXLLSvTwkKelCLKoGDilTImtxNflyB0Hc-79-tDWNGR-Ri-XhwdiQZ1-zUvzv0qKMvpOKvNhfhDQk5_ogdRTJNWQLOQMWKIk"
