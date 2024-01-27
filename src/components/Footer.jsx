@@ -60,7 +60,7 @@ const Footer = () => {
             </p>
             <div className="flex items-center  mt-2 gap-2">
               <MdOutlineMail size={20} color="white" />
-              <p className="text-sm text-white">Kickstarrt@gamil.com</p>
+              <p className="text-sm text-white">Kickstart@gamil.com</p>
             </div>
 
             <div className="flex items-center  mt-2 gap-2">

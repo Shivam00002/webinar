@@ -12,7 +12,8 @@ export const VideoPlayer = () => {
       <div className=" md:flex mt-4  w-full h-fit gap-5 ">
         <div className=" md:w-[50%] w-full h-[200px] md:h-[250px]">
           <ReactPlayer
-            url="https://www.youtube.com/watch?v=EwWMV9RGfcQ&list=RDEwWMV9RGfcQ&start_radio=1"
+         //   url="https://www.youtube.com/watch?v=EwWMV9RGfcQ&list=RDEwWMV9RGfcQ&start_radio=1"
+            url="https://youtu.be/8KKGj9EfV3E"
             width="100%"
             height="100%"
             controls={true}
