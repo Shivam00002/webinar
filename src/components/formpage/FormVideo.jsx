@@ -57,17 +57,17 @@ const FormVideo = () => {
           <ContectForm />
         </div>
       </div>
-      <h2 className="font-semibold md:text-[23px]  text-[17px] text-[#FF7F37] ">
+      <h2 className="font-semibold md:text-[23px] md:px-0 px-2  text-[17px] text-[#FF7F37] ">
         Share this webinar
       </h2>
-      <div className="flex items-center gap-4 mt-2">
+      <div className="flex items-center md:px-0 px-2 gap-4 mt-2">
         <CiFacebook size={16} />
         <FaInstagram size={15} />
         <FaTwitter size={15} />
         <FaYoutube size={15} />
       </div>
 
-      <div className="w-[400px] px-2 py-12 shadow-lg mt-5 h-fit md:h-[350px] mx-auto border rounded-lg ">
+      <div className="md:max-w-[400px] w-full px-2 py-12 shadow-lg mt-5 h-fit md:h-[350px] mx-auto border rounded-lg ">
         <p className="text-center text-sm border-b-2 w-fit mx-auto border-yellow-400">
           Saturday, 27-01-2024, at 09:00 AM
         </p>
