@@ -7,11 +7,10 @@ import { WillLearn } from "./WillLearn";
 import NextStep from "./NextStep";
 import SeatForm from "./SeatForm";
 import { Frequently } from "./Frequently";
-import Footer from "./Footer";
 
 export const Home = () => {
   return (
-    <div className="md:max-w-[1040px] w-full mx-auto">
+    <>
       <HeroComponent />
       <Featured />
       <VideoPlayer />
@@ -20,7 +19,6 @@ export const Home = () => {
       <NextStep />
       <SeatForm />
       <Frequently />
-      <Footer />
-    </div>
+    </>
   );
 };
