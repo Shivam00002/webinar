@@ -1,8 +1,32 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 const ContectForm = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        "service_70lnyb5",
+        "template_syf6z5k",
+        form.current,
+        "tfeREQ9t5ZvZ8Ir_l"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          window.location.reload()
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
+
   return (
-    <div>
+    <form ref={form} onSubmit={sendEmail}>
       <p className="md:font-semibold md:text-[16px] text-sm text-gray-600">
         Purpose of Payment
       </p>
@@ -24,6 +48,7 @@ const ContectForm = () => {
       </p>
       <input
         type="text"
+        name="from_name"
         className="w-full h-fit md:py-3 py-2  border-2 rounded-lg  border-gray-200 "
       />
       <p className="md:text-[17px] text-sm md:mt-5 mt-3   text-gray-500 px-1 ">
@@ -31,14 +56,15 @@ const ContectForm = () => {
       </p>
       <input
         type="text"
+        name="from_email"
         className="w-full h-fit md:py-3 py-2  border-2 rounded-lg  border-gray-200 "
       />
 
       <p className="md:text-[17px] text-sm md:mt-5 mt-3   text-gray-500 px-1 ">
         Phone Number
       </p>
-      <input
-        type="text"
+      <textarea
+        name="message"
         className="w-full h-fit md:py-3  py-2 border-2 rounded-lg  border-gray-200 "
       />
 
@@ -49,10 +75,12 @@ const ContectForm = () => {
         <span className="underline">Terms of services</span> and{" "}
         <span className="underline">Refund policy</span>
       </p>
-      <button className="md:px-14 py-2 md:text-[18px]  bg-[#ED5E93] text-white font-semibold mx-auto  w-full mt-4 md:w-fit grid place-content-center rounded-lg ">
-        NEXT
-      </button>
-    </div>
+      <input
+        className="md:px-14 cursor-pointer py-2 md:text-[18px]  bg-[#ED5E93] text-white font-semibold mx-auto  w-full mt-4 md:w-fit grid place-content-center rounded-lg "
+        type="submit"
+        value="NEXT"
+      />
+    </form>
   );
 };
 

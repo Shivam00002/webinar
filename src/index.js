@@ -9,7 +9,7 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <div className="md:max-w-[1140px] w-full mx-auto">
     <App />
-    <Footer/>
+    <Footer />
   </div>
 
 
