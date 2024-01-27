@@ -3,7 +3,7 @@ import { TiTick } from "react-icons/ti";
 const YouLearn = () => {
   return (
     <div>
-      <h2 className="font-semibold md:text-[24px] text-[17px]">
+      <h2 className="font-semibold md:text-[24px] text-[19px]">
         You'll learn:
       </h2>
 
@@ -17,7 +17,7 @@ const YouLearn = () => {
           will share their knowledge on a specific field
         </p>
       </div>
-      <div className="flex items-start gap-2  mt-2">
+      <div className="flex items-start gap-2  mt-4">
         <TiTick
           color=""
           className="text-white md:min-w-4   md:min-h-4 h-4 w-5 bg-[#FF7F37] rounded-md border border-white"
@@ -28,7 +28,7 @@ const YouLearn = () => {
         </p>
       </div>
 
-      <div className="flex items-start gap-2 mt-2">
+      <div className="flex items-start gap-2 mt-4">
         <TiTick
           color=""
           className="text-white  md:min-w-4   md:min-h-4 h-4 w-5 bg-[#FF7F37] rounded-md border border-white"
@@ -39,7 +39,7 @@ const YouLearn = () => {
         </p>
       </div>
 
-      <div className="flex items-start gap-2 mt-2">
+      <div className="flex items-start gap-2 mt-4">
         <TiTick
           color=""
           className="text-white  md:min-w-4   md:min-h-4 h-4 w-5 bg-[#FF7F37] rounded-md border border-white"
@@ -50,7 +50,7 @@ const YouLearn = () => {
         </p>
       </div>
 
-      <div className="flex items-start gap-2 mt-2">
+      <div className="flex items-start gap-2 mt-4">
         <TiTick
           color=""
           className="text-white md:min-w-4   md:min-h-4 h-4 w-5 bg-[#FF7F37] rounded-md border border-white"
@@ -64,7 +64,7 @@ const YouLearn = () => {
       <h2 className="font-semibold md:text-[24px] mt-5 text-[17px]">
         Details of the webinar
       </h2>
-      <p className="text-[17px] leading-5 font-semibold text-gray-600 mt-2">
+      <p className="md:text-[17px] text-sm leading-5 font-semibold text-gray-600 mt-2">
         Session time: 3 Hrs
       </p>
 
