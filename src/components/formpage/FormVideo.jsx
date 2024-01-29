@@ -1,11 +1,44 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ReactPlayer from "react-player";
 import YouLearn from "./YouLearn";
 import ContectForm from "./ContectForm";
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram, FaTwitter, FaYoutube } from "react-icons/fa";
+import { useLocation } from "react-router-dom";
 
 const FormVideo = () => {
+  const [video, setVideo] = useState([]);
+  const { search } = useLocation();
+  const params = new URLSearchParams(search);
+  const idValue = params.get("id");
+
+  const getVideourl = async () => {
+    try {
+      const response = await fetch(
+        `https://webinar-backend.vercel.app/data/${idValue}`
+      );
+      if (response.ok) {
+        const data = await response.json();
+        setVideo(data.Webinar.video_url);
+      } else {
+        console.error(
+          "Failed to fetch webinars:",
+          response.status,
+          response.statusText
+        );
+      }
+    } catch (error) {
+      console.error("Error fetching webinars:", error.message);
+    }
+  };
+
+  useEffect(() => {
+    console.log("ID Value:", idValue);
+    getVideourl();
+  }, [idValue]);
+
+  console.log("Video:", video);
+
   return (
     <div className="w-full md:py-4 py-2  md:px-2 px-2 mx-auto h-fit  ">
       <h1 className="font-semibold md:text-[35px] md:px-24 text-[22px] text-center leading-8 md:leading-10 ">
@@ -20,7 +53,7 @@ const FormVideo = () => {
       <p className="text-sm font-semibold text-gray-600">CEO Of Perusal Tech</p>
       <div className="w-full md:h-[400px] h-[200px]  border mt-5">
         <ReactPlayer
-          url="https://youtu.be/8KKGj9EfV3E"
+          url={video ? video : "https://youtu.be/8KKGj9EfV3E"}
           width="100%"
           height="100%"
           controls={true}
