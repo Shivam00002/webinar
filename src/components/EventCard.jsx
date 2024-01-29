@@ -22,7 +22,7 @@ export const EventCard = ({
     : `${description.split(" ").slice(0, 30).join(" ")}...`;
 
   return (
-    <div className="md:w-[380px] w-full  relative rounded-lg  md:h-[550px] pb-2    px-2 md:px-0 border">
+    <div className="md:w-[380px] w-full  relative rounded-lg  h-[550px] pb-2    px-2 md:px-0 border">
       <div className="w-full h-fit bg-[#FFF3EB]   py-2 ">
         <div className="flex items-center px-5 py-1 text-white rounded-lg w-fit mx-auto ">
           <h3 className="bg-[#03338F]  text-[18px] px-6  py-2 rounded-l-lg ">
@@ -79,7 +79,7 @@ export const EventCard = ({
         </p>
         {displayedText.length > 175 && (
           <button
-            className="read-more-button text-sm font-semibold text-red-500 px-2"
+            className="read-more-button  text-sm font-semibold text-red-500 px-2"
             onClick={toggleShowMore}
           >
             Read More
