@@ -1,10 +1,45 @@
-import React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 import { MdOutlineMail } from "react-icons/md";
 import { MdAddIcCall } from "react-icons/md";
 import { CiFacebook } from "react-icons/ci";
 import { FaInstagram } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa6";
+
 const Footer = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const email = form.current.from_email.value.trim();
+
+    if (!email) {
+      toast.error("Please enter your email!");
+      return;
+    }
+
+    emailjs
+      .sendForm(
+        "service_70lnyb5",
+        "template_syf6z5k",
+        form.current,
+        "tfeREQ9t5ZvZ8Ir_l"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          window.location.reload();
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+
+    toast.success("Registration Successful!");
+  };
+
   return (
     <div>
       <div className="w-full md:px-10 px-4 md:py-10 py-6 h-fit md:h-[400px] bg-black">
@@ -45,15 +80,19 @@ const Footer = () => {
             <p className="font-semibold text-white text-[20px]">
               Subscribe to our newsletter
             </p>
-            <input
-              type="text"
-              placeholder="Email Address"
-              className=" border-2 rounded-md md:w-[250px] md:mt-4 mt-3 w-full h-[35px] px-2"
-            />
 
-            <button className="    md:w-[250px] w-full  md:mt-5 mt-5  mx-auto px-4  h-fit md:text-[17px] py-3  md:py-1 bg-[#FF68A0] text-white font-semibold whitespace-nowrap rounded-lg">
-              Subscribe
-            </button>
+            <form ref={form} onSubmit={sendEmail}>
+              <input
+                type="email"
+                name="from_email"
+                placeholder="Email Address"
+                className=" border-2 rounded-md md:w-[250px] md:mt-4 mt-3 w-full h-[35px] px-2"
+              />
+
+              <button className="    md:w-[250px] w-full  md:mt-5 mt-5  mx-auto px-4  h-fit md:text-[17px] py-3  md:py-1 bg-[#FF68A0] text-white font-semibold whitespace-nowrap rounded-lg">
+                Subscribe
+              </button>
+            </form>
 
             <p className="font-semibold mt-5 text-[17px] text-white">
               Reach out to us
@@ -85,7 +124,6 @@ const Footer = () => {
         <p className="text-sm font-semibold">
           2024 Perusal. All Rights Reserved
         </p>
-
         <p className="text-sm font-semibold">Privacy Policy</p>
         <p className="text-sm font-semibold">Cookie Policy</p>
         <p className="text-sm font-semibold">Support</p>

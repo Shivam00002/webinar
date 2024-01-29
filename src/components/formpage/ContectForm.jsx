@@ -1,11 +1,21 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 const ContectForm = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
+
+    const name = form.current.from_name.value.trim();
+    const email = form.current.from_email.value.trim();
+    const phoneNumber = form.current.message.value.trim();
+
+    if (!name || !email || !phoneNumber) {
+      toast.error("All the  fields are required!");
+      return;
+    }
 
     emailjs
       .sendForm(
@@ -17,12 +27,14 @@ const ContectForm = () => {
       .then(
         (result) => {
           console.log(result.text);
-          window.location.reload()
+          window.location.reload();
         },
         (error) => {
           console.log(error.text);
         }
       );
+
+    toast.success("Registration Successful!");
   };
 
   return (
@@ -49,15 +61,15 @@ const ContectForm = () => {
       <input
         type="text"
         name="from_name"
-        className="w-full h-fit md:py-3 py-2  border-2 rounded-lg  border-gray-200 "
+        className="w-full h-fit px-2 md:py-3 py-2  border-2 rounded-lg  border-gray-200 "
       />
       <p className="md:text-[17px] text-sm md:mt-5 mt-3   text-gray-500 px-1 ">
         Email
       </p>
       <input
-        type="text"
+        type="email"
         name="from_email"
-        className="w-full h-fit md:py-3 py-2  border-2 rounded-lg  border-gray-200 "
+        className="w-full  px-2 h-fit md:py-3 py-2  border-2 rounded-lg  border-gray-200 "
       />
 
       <p className="md:text-[17px] text-sm md:mt-5 mt-3   text-gray-500 px-1 ">
@@ -65,7 +77,7 @@ const ContectForm = () => {
       </p>
       <textarea
         name="message"
-        className="w-full h-fit md:py-3  py-2 border-2 rounded-lg  border-gray-200 "
+        className="w-full h-fit px-2 md:py-3  py-2 border-2 rounded-lg  border-gray-200 "
       />
 
       <div className="font-semibold text-center md:text-[22px] mt-5 md:mt-7">
@@ -76,7 +88,7 @@ const ContectForm = () => {
         <span className="underline">Refund policy</span>
       </p>
       <input
-        className="md:px-14 cursor-pointer py-2 md:text-[18px]  bg-[#ED5E93] text-white font-semibold mx-auto  w-full mt-4 md:w-fit grid place-content-center rounded-lg "
+        className="md:px-14 px-2 cursor-pointer py-2 md:text-[18px]  bg-[#ED5E93] text-white font-semibold mx-auto  w-full mt-4 md:w-fit grid place-content-center rounded-lg "
         type="submit"
         value="NEXT"
       />
