@@ -5,6 +5,7 @@ export const Events = () => {
   let cards = [0, 0, 0, 0, 0];
   const [webinars, setWebinars] = useState([]);
 
+
   const Api = "https://webinar-backend.vercel.app/data";
 
   const fetchWebinars = async () => {
