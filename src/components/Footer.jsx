@@ -68,6 +68,7 @@ const Footer = () => {
             <p className="text-white text-sm">
               Personal & Professional Management
             </p>
+            <p className="text-[red]  text-sm"><a  href="https://web-admin-mu.vercel.app/">Admin</a></p>
             <p className="text-white  text-sm">Skill your goal</p>
             <p className="text-white  text-sm">Personal development</p>
             <p className="text-white  text-sm">Carrier development</p>

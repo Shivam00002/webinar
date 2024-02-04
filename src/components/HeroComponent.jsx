@@ -14,6 +14,8 @@ export const HeroComponent = () => {
         <p className="md:text-[21px] md:mt-2 text-sm text-white">
           Empowering Your Future Through Knowledge
         </p>
+   
+ 
 
         <div className="md:w-[440px] w-full border-b-2 border-[#FF9B7B] py-2 md:mt-10">
           <p className=" md:text-[26px] text-[17px] text-white">
