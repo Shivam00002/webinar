@@ -5,6 +5,7 @@ const NextStep = () => {
     <div className="w-full md:h-[300px]  mt-10 h-fit md:px-10   md:flex  justify-around items-center md:gap-4 ">
       <div className="md:relative  mx-auto  mt-4 md:w-[210px] w-[310px] h-[200px] md:h-[210px] ">
         <div className=" md:w-[210px] -top-14 -left-16 md:h-[210px] rounded-full border-[3px] border-[#FF7F37] absolute"></div>
+
         <img
           src="https://blogger.googleusercontent.com/img/a/AVvXsEgnyh4c7hunV6A52ZAQMOWYXQpyO29W2YfclbADDHOjCcoZBpeosMBCFMs1B2Le2Oh5ckyCXBZO0UyM9x1LM509CsyJQaNCl1PWVVXfHRHiPvHm2dCe0PnMxlNiQZH4uYZLugCT3xh5E7xQSkvcvSwgtOo3RE9Z5IpXmczF67vlfusvBjedIWQA7oh7BhM"
           alt="girl"
