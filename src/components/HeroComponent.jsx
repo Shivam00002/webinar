@@ -15,8 +15,6 @@ export const HeroComponent = () => {
           Empowering Your Future Through Knowledge
         </p>
    
- 
-
         <div className="md:w-[440px] w-full border-b-2 border-[#FF9B7B] py-2 md:mt-10">
           <p className=" md:text-[26px] text-[17px] text-white">
             Join Our Masterclasses On{" "}
