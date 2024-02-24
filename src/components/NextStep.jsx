@@ -12,6 +12,7 @@ const NextStep = () => {
         />
       </div>
 
+
       <div className="md:w-[700px] w-full h-fit md:mt-0 mt-32 md:px-0 px-2">
         <h2 className="font-semibold md:text-[35px] text-[24px] leading-7 md:leading-10 ">
           Take the next step toward your personal and professional goals with
