@@ -15,8 +15,6 @@ export const Frequently = () => {
         <FreqQues />
         <FreqQues />
       </div>
-
-
       <button className=" text-white font-semibold md:mt-20 mt-10 md:text-[17px] text-[12px] rounded-lg grid place-content-center mx-auto md:px-4 px-6 md:py-1 py-2 bg-[#ED9BB7] ">
         BOOK YOUR SPOT NOW AT &#8377; 499
       </button>
