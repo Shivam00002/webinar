@@ -8,7 +8,6 @@ const LearnCard = () => {
         color=""
         className="text-white md:w-6  md:h-6 h-4 w-5 bg-[#FF7F37] rounded-md border border-white"
       />
-
       <p className="text-white md:text-[17px] text-sm  rounded-lg md:px-5 px-2 md:py-4 py-2 bg-[#6e6b6c]">
         Subject Matter Expertise will share their knowledge on a specific field
       </p>
