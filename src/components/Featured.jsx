@@ -14,7 +14,6 @@ export const Featured = () => {
         })}
       </div>
 
-
       <h2 className="text-center mt-7 font-semibold text-[15px] whitespace-nowrap md:leading-8 md:text-[35px]">
         Why Join Our Masterclasses Should Attend?
       </h2>
