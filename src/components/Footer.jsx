@@ -20,7 +20,6 @@ const Footer = () => {
       return;
     }
 
-
     emailjs
       .sendForm(
         "service_70lnyb5",
