@@ -16,6 +16,7 @@ export const Home = () => {
       <VideoPlayer />
       <Events />
       <WillLearn />
+
       <NextStep />
       <SeatForm />
       <Frequently />
