@@ -9,6 +9,7 @@ export const FreqQues = () => {
       className="flex   md:w-[550px] cursor-pointer border-[#FCCB4D] mx-auto h-14 px-2 border-b-2  items-center justify-between"
     >
 
+
       <div>
         <p className="font-semibold text-[17px] ">
           How do I register for a Webinar?
