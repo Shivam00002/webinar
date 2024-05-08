@@ -13,6 +13,7 @@ function App() {
         <Routes>
           <Route path='/' element={<Home />} />
 
+
           <Route path='/form' element={<Form />} />
         </Routes>
         <Toaster toastOptions={{ position: 'top-center', style: { fontSize: "20px" } }} />
