@@ -10,6 +10,7 @@ export const FreqQues = () => {
     >
 
 
+
       <div>
         <p className="font-semibold text-[17px] ">
           How do I register for a Webinar?
