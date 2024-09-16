@@ -8,6 +8,7 @@ export const HeroComponent = () => {
       <div className=" w-full md:h-full h-[700px] mx-auto">
         <h2 className="text-white  font-semibold text-[25px] leading-7 md:leading-10 md:text-[36px]">
           {" "}
+
           <span className="text-blue-400">Live epic</span> Kickstart That Makes
           You Complete
         </h2>
