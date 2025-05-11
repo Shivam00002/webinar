@@ -20,8 +20,6 @@ export const EventCard = ({
   };
 
 
-
-
   const displayedText = showMore
     ? description
     : `${description.split(" ").slice(0, 30).join(" ")}...`;
