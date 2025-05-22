@@ -18,7 +18,6 @@ export const EventCard = ({
     setShowMore(!showMore);
   };
 
-
   const displayedText = showMore
     ? description
     : `${description.split(" ").slice(0, 30).join(" ")}...`;
