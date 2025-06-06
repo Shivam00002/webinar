@@ -14,7 +14,6 @@ export const EventCard = ({
   const [showMore, setShowMore] = useState(false);
 
 
-
   const toggleShowMore = () => {
     setShowMore(!showMore);
   };
