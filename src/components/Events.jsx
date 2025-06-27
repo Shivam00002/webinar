@@ -22,6 +22,7 @@ export const Events = () => {
           response.status,
           response.statusText
         );
+
       }
     } catch (error) {
       console.error("Error fetching webinars:", error.message);
