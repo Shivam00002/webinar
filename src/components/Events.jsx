@@ -7,6 +7,7 @@ export const Events = () => {
 
 
 
+
   const Api = "https://webinar-backend.vercel.app/data";
 
   const fetchWebinars = async () => {
