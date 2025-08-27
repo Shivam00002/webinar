@@ -15,6 +15,7 @@ export const EventCard = ({
 
 
 
+
   const toggleShowMore = () => {
     setShowMore(!showMore);
   };
